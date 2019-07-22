@@ -4,145 +4,163 @@
     <meta charset="UTF-8">
     <title>OnlineShop</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
-    <!--<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="scripts/scripts.js"></script>-->
+    <script defer src="script/script.js"></script>
 </head>
 <body> <!--F11 закладка Bookmarks, Shift+F11-вызов всех закладок -->
-<header class="header">
-    <div class="header-top">
-        <div class="header-top-left">
-            <a class="header-top-left__login" href="#"><span>Вход</span></a>
-            <a class="header-top-left__favorites" href="#"><span>Избранное</span></a>
-            <a class="header-top-left__compare" href="#"><span>Сравнение</span></a>
-        </div>
+<div class="container">
+<div class="grid-container">
 
-        <div class="header-top-social">
-            <a class="header-top-social-item__vk" href=""></a>
-            <a class="header-top-social-item__fb" href=""></a>
-            <a class="header-top-social-item__tw" href=""></a>
+<header class="header">
+    <h1 style='display: none;'>Обувь для искушенных дам</h1>
+    <div class="header-block">
+        <div class="header-top">
+            <a href="#" class="header-top__link" title="вход в личный кабинет"><span>
+                <svg class="icon" >
+                    <use xlink:href="img/sign.svg#sign"></use>
+                </svg>
+                Вход</span></a>
+            <a href="#" class="header-top__link" title="избранное"><span>
+                 <svg class="icon" >
+                    <use xlink:href="img/heart.svg#heart"></use>
+                </svg>
+                Избранное</span></a>
+            <a href="#" class="header-top__link" title="сравнение"><span>
+                 <svg class="icon">
+                    <use xlink:href="img/compare.svg#compare"></use>
+                </svg>
+                Сравнение</span></a>
+        </div>
+        <div class="social">
+            <a href="" class="social-item" target="_blank" title="Группа в vkontakte" rel="nofollow noreferrer noopener">
+                <svg class="icon" >
+                    <use xlink:href="img/vk.svg#vk"></use>
+                </svg>
+                x</a>
+            <a href="" class="social-item" target="_blank" title="Группа в facebook" rel="nofollow noreferrer noopener">
+                <svg class="icon" >
+                    <use xlink:href="img/facebook.svg#fb"></use>
+                </svg>
+                x</a>
+            <a href="" class="social-item" target="_blank" title="Канал в twitter" rel="nofollow noreferrer noopener">
+                <svg class="icon" >
+                    <use xlink:href="img/twitter.svg#twitter"></use>
+                </svg>
+                x</a>
         </div>
     </div>
-    <div class="header-middle">
-        <a href="/" class="header-middle__logo">
-            <img src="#" alt="logo">
-        </a>
+    <div class="header-box">
 
-        <div class="header-middle-contacts">
-            <span class="header-middle-contacts__phone">8 (800) 684 55 94</span>
-            <span class="header-middle-contacts__email">info@nalabuten.ah</span>
-            <form class="search-form" method="get">
-                <input class="search-form__input" type="search" placeholder="Введите поисковую фразу">
-                <button class="search-form__button"></button>
+        <figure>
+            <img src="images/mobilelogo.png" alt="logo" class="header-logo__img">
+            <figcaption>
+                <div>NALABUTEN.AH</div>
+                <div>unrealizable dreams</div>
+            </figcaption>
+        </figure>
+
+        <div class="header-contacts">
+            <a href="tel:88006845594" class="header-contacts__phone" title="телефон">
+                <svg class="icon">
+                    <use xlink:href="img/phone.svg#phone"></use>
+                </svg>
+                8 (800) 684 55 94</a>
+            <a href="mailto:info@nalabuten.ah" class="header-contacts__email" title="почта">
+                <svg class="icon" >
+                    <use xlink:href="img/letter.svg#letter"></use>
+                </svg>
+                info@nalabuten.ah</a>
+            <form method="get" class="search-form">
+                <input type="search" class="search-form__input" placeholder="Введите поисковую фразу" aria-label="Поиск">
+                <button type="submit" class="search-form__button" title="поиск">
+                  <svg class="icon-button">
+                    <use xlink:href="img/search.svg#search"></use>
+                  </svg>
+                </button>
             </form>
         </div>
 
-        <div class="header-middle-chekout">
-            <div class="header-middle-chekout__total">75 000</div>
-            <div class="header-middle-chekout__count" data-count="2"></div>
+        <div class="basket">
+            <output name="o" for="a b" class="basket__total">75000 р.</output>
+            <a aria-label="Корзина" href="#" data-count="2" class="cart">
+                <svg class="icon">
+                    <use xlink:href="img/basket.svg#basket"></use>
+                </svg>
+            </a>
 
         </div>
     </div>
-    <nav class="header-nav">
-        <ul class="headerNav">
-            <li class="headerNav__item"><a href="#">Главная</a></li>
-            <li class="headerNav__item"><a href="#">Каталог</a></li>
-            <li class="headerNav__item"><a href="#">Галерея</a></li>
-            <li class="headerNav__item"><a href="#">Акции</a></li>
-            <li class="headerNav__item"><a href="#">Контакты</a></li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="#" class="nav__list-link">Главная</a></li>
+            <li class="nav__list-item"><a href="#" class="nav__list-link">Каталог</a></li>
+            <li class="nav__list-item"><a href="#" class="nav__list-link">Галерея</a></li>
+            <li class="nav__list-item"><a href="#" class="nav__list-link">Акции</a></li>
+            <li class="nav__list-item"><a href="#" class="nav__list-link">Контакты</a></li>
         </ul>
     </nav>
 </header>
-<main>
 
-    <aside class="aside">
-        <section class="aside-section">
-            <h2 class="aside-section-rank">Категории</h2>
-            <ul class="aside-section-item">
-                <li class="aside-section-item__li">Вечерние</li>
-                <li class="aside-section-item__li">Свадебные</li>
-                <li class="aside-section-item__li">Бальные</li>
-                <li class="aside-section-item__li">Повседневные</li>
-                <li class="aside-section-item__li">Особенные</li>
-                <li class="aside-section-item__li">Обыкновенные</li>
-                <li class="aside-section-item__li">Оригиналные</li>
-                <li class="aside-section-item__li">Космические</li>
-            </ul>
-        </section>
-
-        <div class="aside-promotion-top">
-            <a class="aside-promotion-top__discount" href="#"><img src="#"  alt="Promotion"> </a>
-        </div>
-        <div class="aside-promotion-bottom">
-            <a class="aside-promotion-bottom__shoes" href="#"><img src="#"  alt="Promotion"> </a>
-        </div>
-
-    </aside>
-    <div class="mainDiv">
-        <section class="mainDiv-big">
-            <div class="mainDiv-big__picture">
-                <img src="#"  alt="Labuten">
-            </div>
-            <div class="mainDiv-big-name">
-                <div class="mainDiv-big-name__labuten">Labuten Cherry</div>
-                <h2 class="mainDiv-big-name__new">Новая весенняя коллекция</h2>
-                <p class="mainDiv-big-name__text">Мы рады вам представить новую коллекцию туфель от знаменитого дизайнера-модельера Кристиана </p>
-
-                <a class="mainDiv-big-name__buyNow" href="#"> <div>купить сейчас</div></a>
+<main class="main">
+    <div class="main-div">
+       <section class="banner">
+            <div class="banner__picture">
+                <img src="images/product_image.png"
+                     srcset="images/product_image@2x.png 2x, images/product_image@3x.png 3x"
+                     alt="Labuten"><!--проверить какую картинку загрузили-кликаем элемент $0.currentSrc -->
+          </div>
+            <div class="banner-name">
+                <div class="banner-name__big">Labuten Cherry</div>
+                <h2 class="banner-name__ht">Новая весенняя коллекция</h2>
+                <p class="banner-name__text">Мы рады вам представить новую коллекцию туфель от знаменитого дизайнера-модельера Кристиана </p>
+                <button class="banner-name__button">купить</button>
             </div>
         </section>
 
-        <div class="mainDiv-selling-sale-actions">
-
-            <a class="mainDiv-selling" href="#">
-
-                <div class="mainDiv-selling__name">Продажа</div>
-                <p class="mainDiv-selling__text">Широкий ассортимент моделей</p>
+        <div class="selling-sale-actions">
+            <a class="selling" href="#">
+                <div class="selling__name">Продажа</div>
+                <p class="selling__text">Широкий ассортимент моделей</p>
             </a>
-
-            <a class="mainDiv-sale" href="#">
-
-                <div class="mainDiv-sale__name" >Скидки</div>
-                <p class="mainDiv-sale__text" >Невообразимо низкие цены</p>
+            <a class="sale" href="#">
+                <div class="sale__name" >Скидки</div>
+                <p class="sale__text" >Невообразимо низкие цены</p>
             </a>
-
-            <a class="mainDiv-action" href="#">
-
-                <div class="mainDiv-action__name">Акции</div>
-                <p class="mainDiv-action__text">Широкий ассортимент моделей</p>
+            <a class="actions" href="#">
+                <div class="actions__name">Акции</div>
+                <p class="actions__text">Широкий ассортимент моделей</p>
             </a>
         </div>
 
-        <section class="sectionNew">
-            <h2 class="sectionNew__new">
+        <section class="section">
+            <h2 class="section__new">
                 Новинки
             </h2>
-            <div class="sectionNew-unit">
-
-                <div class="sectionNew-item">
-                    <a href="#" class="sectionNew-item__link">
-                        <img src="#"  alt="Labuten">
-                        <div class="sectionNew-item__title">Labuten-lady</div>  <!--или <h3></h3>-->
+            <div class="section-unit">
+                <div class="section-block">
+                    <a href="#" class="section-view">
+                        <img class="section-view__pic" src="#"  alt="Labuten">
+                        <div class="section-view__title">Labuten-lady</div>
                     </a>
-                    <div class="sectionNew-item__price">35 000 р.</div>
-                    <div class="sectionNew-item__block">
-                        <a href="#" class="sectionNew-item__buy">В корзину</a>
-                        <a href="#"></a>
+                    <div class="section-item__price">35 000 р.</div>
+                    <div class="section-item__block">
+                        <a href="#" class="section-item__buy">В корзину</a>
+                        <a href="#"></a>     <!--<button title="???"></button>-->
                     </div>
                 </div>
 
-                <div class="sectionNew-item">
-                    <a href="#" class="sectionNew-item__link">
-                        <img src="#"  alt="Labuten">
-                        <div class="sectionNew-item__title">Labuten-lady</div>  <!--или <h3></h3>-->
+                    <figure class="article">
+                    <a href="#" class="article-item__link">
+                        <img src="#"  alt="Labuten" class="article-item__img">
                     </a>
-                    <div class="sectionNew-item__price">35 000 р.</div>
-                    <div class="sectionNew-item__block">
-                        <a href="#" class="sectionNew-item__buy">В корзину</a>
-                        <a href="#"></a>
-                    </div>
-                </div>
-
+                    <figcaption class="product">
+                        <div class="product__name">Labuten-lady</div>
+                        <div class="product__price">35 000 р.</div>
+                        <button class="product__button-buy" title="Положить в корзину">В корзину</button>
+                        <button class="product__button-favorite" title="Добавить в избранное"></button>
+                    </figcaption>
+                    </figure>
             </div>
         </section>
 
@@ -151,23 +169,10 @@
                 Товары со скидкой
             </h2>
             <div class="sectionDiscount-unit">
-
                 <div class="sectionDiscount-item">
                     <a href="#" class="sectionDiscount-item__link">
                         <img src="#"  alt="Labuten">
-                        <div class="sectionDiscount-item__title">Labuten-lady</div> <!--или <h3></h3>-->
-                    </a>
-                    <div class="sectionDiscount-item__price">35 000 р. <sup><del>42 700 р.</del></sup>   </div>
-                    <div class="sectionDiscount-item__block">
-                        <a href="#" class="sectionDiscount-item__buy">В корзину</a>
-                        <a href="#"></a>
-                    </div>
-                </div>
-
-                <div class="sectionDiscount-item">
-                    <a href="#" class="sectionDiscount-item__link">
-                        <img src="#"  alt="Labuten">
-                        <div class="sectionDiscount-item__title">Labuten-lady</div> <!--или <h3></h3>-->
+                        <div class="sectionDiscount-item__title">Labuten-lady</div>
                     </a>
                     <div class="sectionDiscount-item__price">35 000 р. <sup><del>42 700 р.</del></sup>   </div>
                     <div class="sectionDiscount-item__block">
@@ -181,57 +186,78 @@
     </div>
 </main>
 
+<aside class="aside"> <!--сайдбар Всегда должен быть ниже основного контента,т.к. он менее Важен!!!-->
+    <section class="aside__section">
+        <h2 class="aside__menu">Категории</h2>
+        <ul class="category">
+            <li class="category__list"><a class="category__item">Вечерние</a></li>
+            <li class="category__list"><a class="category__item">Свадебные</a></li>
+            <li class="category__list"><a class="category__item">Бальные</a></li>
+            <li class="category__list"><a class="category__item">Повседневные</a></li>
+            <li class="category__list"><a class="category__item">Особенные</a></li>
+            <li class="category__list"><a class="category__item">Обыкновенные</a></li>
+            <li class="category__list"><a class="category__item">Оригиналные</a></li>
+            <li class="category__list"><a class="category__item">Космические</a></li>
+        </ul>
+    </section>
+
+    <div class="promotion1">
+        <a class="promotion1__discount" href="#"><img src="#" alt="promotion1__link"> </a>
+    </div>
+    <div class="promotion2">
+        <a class="promotion2__shoes" href="#"><img src="#" alt="promotion2__link"> </a>
+    </div>
+</aside>
+
 <footer class="footer">
-    <a href="/" class="footer-logo">
-        <img src="#" alt="logo">
+    <a href="/" class="footer-logo" title="Покупайте обувь Lubuten онлайн">
+        <img src="#" alt="logo" class="footer-logo__img">
     </a>
 
-    <nav class="footerNav">
-        <div class="footerNav-menu">
+    <div class="footer-block">
+        <div class="footer-block__name">
             Меню
         </div>
-        <ul class="footerNav-list">
-            <li class="footerNav-list__item"><a href="#">Главная</a></li>
-            <li class="footerNav-list__item"><a href="#">Каталог</a></li>
-            <li class="footerNav-list__item"><a href="#">Галерея</a></li>
-            <li class="footerNav-list__item"><a href="#">Акции</a></li>
-            <li class="footerNav-list__item"><a href="#">Контакты</a></li>
+        <ul class="footer-list">
+            <li class="footer-list__item"><a href="#" class="footer-nav__link">Главная</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-nav__link">Каталог</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-nav__link">Галерея</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-nav__link">Акции</a></li>
+            <li class="footer-list__item"><a href="#" class="footer-nav__link">Контакты</a></li>
         </ul>
-    </nav>
+    </div>
 
     <div class="footer-payment">
-        <div class="footer-payment-how">
+        <div class="footer-payment__way">
             Способы оплаты
         </div>
-        <ul class="footer-payment-how-item">
-            <li class="footer-payment-how-item__cash">Наличными</li>
-            <li class="footer-payment-how-item__visa">Visa или MasterCard</li>
-            <li class="footer-payment-how-item__credit">В кредит</li>
+        <ul class="payment-way">
+            <li class="payment-way__cash">Наличными</li>
+            <li class="payment-way__visa">Visa или MasterCard</li>
+            <li class="payment-way__credit">В кредит</li>
         </ul>
     </div>
 
     <div class="footer-contacts">
-        <div class="footer-contacts-info">
+        <div class="footer-contacts__info">
             Контактная информация
         </div>
-        <ul class="footer-contacts-info-item">
-            <li class="footer-contacts-info-item__phone">Телефон</li>
-            <li class="footer-contacts-info-item__email">E-mail</li>
-            <li class="footer-contacts-info-item__address">Адрес</li>
-        </ul>
+        <address class="address">
+            <a href="tel:84996549879" class="address__phone">Телефон: 8(499)654-98-79</a>
+            <a href="mailto:info@nalabuten.ah" class="address__email">E-mail: info@nalabuten.ah</a>
+            <div class="address__postaddress">Адрес: г.Москва, Фантастический проезд, д.234</div>
+        </address>
     </div>
-
+    <small>&copy; Nalabuten.ah 2017-2019</small>
 </footer>
-<small>&copy; Nalabuten.ah 2017-2019</small>
 
-<button class="footer-button">
+</div>
+</div>
+<button class="scroll-to-top shadow-drop-2-center" title="вверх">
     Вверх
 </button>
 
+
 </body>
 </html>
-<!--Ctrl+F11 закладка Bookmarks,вызов этой закладки Ctrl+I -->
-<!--Ctrl+F12 вызов структуры, можно просто искать теги -->
-<!--TODO доделать ..., можно просто искать теги -->
-<!--Alt+F12 вызов и закрытие консоли local -->
-<!--в консоли local создать папку=mkdir файл=touch-->
+
